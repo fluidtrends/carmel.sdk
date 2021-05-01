@@ -22,7 +22,7 @@ jobs:
         npm ci
         npm run build
         npm run cov
-        ./tmp/cc-test-reporter format-coverage -t lcov -o ./tmp/codeclimate.json --add-prefix main
+        ./tmp/cc-test-reporter format-coverage -t lcov -o ./tmp/codeclimate.main.json --add-prefix main
     - shell: bash
       name: "Upload the coverage report to Code Climate"
       env:
