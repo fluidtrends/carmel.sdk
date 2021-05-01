@@ -18,7 +18,7 @@ jobs:
         chmod +x ./tmp/cc-test-reporter
     - shell: bash
       name: "Create coverage"
-      run: | 
+      run: |
         npm ci
         npm run build
         npm run cov
