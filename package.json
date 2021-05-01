@@ -22,7 +22,8 @@
   "files": [
     "auth/**/*",
     "lib/**/*",
-    "src/**/*"
+    "src/**/*",
+    "package-lock.json"
   ],
   "homepage": "http://www.carmel.io",
   "dependencies": {
