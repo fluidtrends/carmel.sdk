@@ -13,7 +13,7 @@ export type AuthBrowserType = BrowserSyncInstance
 export enum AccessTokenType {
   UNKNOWN = 'unknown',
   GITHUB = 'github',
-  VERCEL = 'vercel',
+  VERCEL = 'vercel'
 }
 
 export type AccessToken = {

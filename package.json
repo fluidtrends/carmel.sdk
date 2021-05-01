@@ -22,8 +22,6 @@
   "files": [
     "auth/**/*",
     "lib/**/*",
-    "local/**/**",
-    "yarn.lock",
     "src/**/*"
   ],
   "homepage": "http://www.carmel.io",
