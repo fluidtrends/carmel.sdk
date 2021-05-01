@@ -4,3 +4,37 @@
 
 <p align="center"> <a href="https://codeclimate.com/github/fluidtrends/carmel.sdk/maintainability"><img src="https://api.codeclimate.com/v1/badges/1ecfce634578b66103ea/maintainability" /></a> <a href="https://codeclimate.com/github/fluidtrends/carmel.sdk/test_coverage"><img src="https://api.codeclimate.com/v1/badges/1ecfce634578b66103ea/test_coverage" /></a> </p>
 
+
+### Prequisites
+
+* [Node.js](https://nodejs.org/) v12
+
+### Install Dependencies 
+
+```
+npm i
+```
+
+### Compile JavaScript
+
+```
+npm run build
+```
+
+### Run Tests
+
+```
+npm test
+```
+
+### Run Coverage
+
+```
+npm run cov
+```
+
+### View Coverage
+
+```
+npm run viewcov
+```

@@ -11,11 +11,11 @@
     "cov": "savor cov",
     "viewcov": "savor viewcov"
   },
-  "author": "I. Dan Calinescu <idancalinescu@gmail.com>",
+  "author": "I. Dan Calinescu <dan@fluidtrends.ch>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fluidtrends/carmel.git"
+    "url": "git+https://github.com/fluidtrends/carmel.sdk.git"
   },
   "main": "src/index.ts",
   "types": "lib/index.d.ts",
