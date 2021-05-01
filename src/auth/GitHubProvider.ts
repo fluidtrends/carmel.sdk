@@ -161,54 +161,54 @@ export class GitHubProvider implements IAuthProvider {
   }
 
   async initialize() {
-    passport.serializeUser((user: User, done) => {
-      done(null, user)
-    })
+    // passport.serializeUser((user: User, done: any) => {
+    //   done(null, user)
+    // })
 
-    passport.deserializeUser((user: User, done) => {
-      done(null, user)
-    })
+    // passport.deserializeUser((user: User, done) => {
+    //   done(null, user)
+    // })
 
-    passport.use(
-      new Strategy(
-        {
-          clientID: GitHubProvider.APP_CLIENT_ID,
-          clientSecret: GitHubProvider.APP_CLIENT_SECRET,
-          callbackURL: this.authenticator.endpoint(`auth/github/callback`),
-        },
-        (accessToken: any, refreshToken: any, profile: any, done: any) => {
-          process.nextTick(() => {
-            const user = {
-              ...profile._json,
-              tokens: [
-                {
-                  type: AccessTokenType.GITHUB,
-                  value: accessToken,
-                },
-              ],
-            }
-            this.authenticator.update(user)
-            done(null, user)
-          })
-        }
-      )
-    )
+    // passport.use(
+    //   new Strategy(
+    //     {
+    //       clientID: GitHubProvider.APP_CLIENT_ID,
+    //       clientSecret: GitHubProvider.APP_CLIENT_SECRET,
+    //       callbackURL: this.authenticator.endpoint(`auth/github/callback`),
+    //     },
+    //     (accessToken: any, refreshToken: any, profile: any, done: any) => {
+    //       process.nextTick(() => {
+    //         const user = {
+    //           ...profile._json,
+    //           tokens: [
+    //             {
+    //               type: AccessTokenType.GITHUB,
+    //               value: accessToken,
+    //             },
+    //           ],
+    //         }
+    //         this.authenticator.update(user)
+    //         done(null, user)
+    //       })
+    //     }
+    //   )
+    // )
 
-    this.authenticator.app.get(
-      '/auth/github',
-      passport.authenticate('github', {
-        scope: ['user:email', 'write:public_key'],
-      })
-    )
+    // this.authenticator.app.get(
+    //   '/auth/github',
+    //   passport.authenticate('github', {
+    //     scope: ['user:email', 'write:public_key'],
+    //   })
+    // )
 
-    this.authenticator.app.get(
-      '/auth/github/callback',
-      passport.authenticate('github', {
-        failureRedirect: '/login',
-      }),
-      (req, res) => {
-        res.redirect('/auth/vercel')
-      }
-    )
+    // this.authenticator.app.get(
+    //   '/auth/github/callback',
+    //   passport.authenticate('github', {
+    //     failureRedirect: '/login',
+    //   }),
+    //   (req, res) => {
+    //     res.redirect('/auth/vercel')
+    //   }
+    // )
   }
 }
