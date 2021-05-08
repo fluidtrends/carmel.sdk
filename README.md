@@ -2,7 +2,7 @@
 <h2 align="center" style="color:#00BCD4"> Carmel SDK </h2>
 </p>
 
-<p align="center"> <a href="https://www.npmjs.com/package/@carmel/sdk"><img src="https://img.shields.io/npm/v/@carmel/cli?label=%40carmel%2Fsdk"/></a></p>
+<p align="center"> <a href="https://www.npmjs.com/package/@carmel/sdk"><img src="https://img.shields.io/npm/v/@carmel/sdk?label=%40carmel%2Fsdk"/></a></p>
 
 <p align="center"><a href="https://img.shields.io/github/milestones/progress-percent/fluidtrends/carmel.sdk/1">
 <img src="https://img.shields.io/github/milestones/progress-percent/fluidtrends/carmel.sdk/1"/>
