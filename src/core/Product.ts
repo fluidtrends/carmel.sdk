@@ -272,7 +272,7 @@ export class Product implements IProduct {
     const covers = coversRoot?.dirs || []
 
     await Promise.all(covers.map(async (cover: Path) => this.generateCover(cover)))
-}
+  }
 
   /**
    *
